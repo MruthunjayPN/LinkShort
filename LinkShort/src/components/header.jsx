@@ -16,8 +16,8 @@ const Header = () => {
     const navigate = useNavigate();
     const user = true ;
   return (
-    <div className="bg-slate-200 py-5">
-        <nav className='flex justify-between p-4 bg-white rounded-2xl items-center mx-20'>
+    <div className="bg-slate-100 py-5 ">
+        <nav className='flex justify-between p-4 bg-white rounded-2xl items-center mx-20 shadow-lg'>
             <Link to='/'>
             <img className="size-12 rounded-full" src='/logo.jpg' />
             </Link>
