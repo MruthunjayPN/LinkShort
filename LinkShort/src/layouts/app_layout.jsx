@@ -9,9 +9,9 @@ const Applayout = () => {
           <Header />
           <Outlet />
         </main>
-        <footer className='text-center mt-10 p-10 h-3 bg-white'>
+        {/* <footer className='text-center mt-10 p-10 h-3 bg-white'>
           Made with love!
-        </footer>
+        </footer> */}
     </div>
   )
 }
