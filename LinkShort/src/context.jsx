@@ -12,7 +12,8 @@ const UrlProvider = ({children}) => {
     useEffect(()=> {   
         fetchUser();
     },[]);
-    return (<UrlContext.Provider value={{user , fetchUser , loading , isAuthenticated}}>
+    return (
+    <UrlContext.Provider value={{user , fetchUser , loading , isAuthenticated}}>
         {children}
     </UrlContext.Provider>
     )
