@@ -9,6 +9,7 @@ import Auth from './pages/auth'
 import Dashboard from './pages/dashboard'
 import Link from './pages/link'
 import Redirect from './pages/redirect'
+import RequrieAuth from './components/require-auth';
 
 const router = createBrowserRouter([
   {
@@ -24,11 +25,15 @@ const router = createBrowserRouter([
       },
       {
         path:"/dashboard",
-        element : <Dashboard />
+        element : <RequrieAuth>
+                    <Dashboard />
+                  </RequrieAuth> 
       },
       {
         path:"/link/:id",
-        element : <Link />
+        element : <RequrieAuth> 
+                    <Link />
+                  </RequrieAuth>
       },
       {
         path:"/:id",
